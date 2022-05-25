@@ -50,4 +50,24 @@ public class ASumar {
 	    }
 	        return suma;
 	}
+	
+	public String totalMejorado(String cadena) {
+		String numero = cadena;
+		char pirmerDigito = numero.charAt(0);
+		if (pirmerDigito == '-') {
+			return "Negativo. Siempre negativo";
+		}else if (numero.length() == 1) {
+            return (numero + " = " + numero);
+        }else {
+        	int suma = 0;
+    	    for (int i = 0; i < cadena.length(); i++) {
+    	            // Cadena de un dígito.
+    	            char digito = cadena.charAt(i);
+    	            suma = suma + Integer.parseInt(String.valueOf(digito));
+    	            //Conversión de caracter a entero
+    	    }
+    	    	String sumaTxt = String.valueOf(suma);
+    	        return sumaTxt;
+        }
+	}
 }
