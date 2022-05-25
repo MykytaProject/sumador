@@ -18,4 +18,19 @@ public class ASumar {
         }
         return null;
 	}
+	/**
+	 * @author Mykyta Ryasny
+	 * @version 1.0
+	 * @param cadena que se le pasa al método para saber si es negativo
+	 * @return devolvemos cadena de texto "Negativ. Siempre negativo" si 
+	 * el primer digito es negativo y de no ser así, no devolvemos nada.
+	 */
+	public String negativo(String cadena) {
+		String numero = cadena;
+		char pirmerDigito = numero.charAt(0);
+		if (pirmerDigito == '-') {
+			return "Negativo. Siempre negativo";
+		}
+		return null;
+	}
 }
