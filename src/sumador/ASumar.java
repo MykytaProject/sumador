@@ -34,15 +34,5 @@ public class ASumar {
 		return null;
 	}
 	
-	public int total(String cadena) {
-		int suma = 0;
 
-        for (int i = 0; i < cadena.length(); i++) {
-            // Cadena de un dígito.
-            char digito = cadena.charAt(i);
-            suma = suma + Integer.parseInt(String.valueOf(digito));
-            //Conversión de caracter a entero
-        }
-        return suma;
-	}
 }

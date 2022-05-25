@@ -20,11 +20,4 @@ class TestAsumar {
 	        assertEquals("Negativo. Siempre negativo",resultado );
 	    }
 	 
-	 @Test
-	    public void testTotal() {
-	        ASumar sumi = new ASumar();
-	        int resultado = sumi.total("15");
-	        assertEquals(7,resultado );
-	    }
-	 
 }
