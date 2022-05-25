@@ -34,5 +34,20 @@ public class ASumar {
 		return null;
 	}
 	
-
+	/**
+	 * @author Mykyta Ryasny
+	 * @version 1.0
+	 * @param cadena le pasamos una cadena que se va a sumar
+	 * @return nos devulve un int 
+	 */
+	public int total(String cadena) {
+		int suma = 0;
+	    for (int i = 0; i < cadena.length(); i++) {
+	            // Cadena de un dígito.
+	            char digito = cadena.charAt(i);
+	            suma = suma + Integer.parseInt(String.valueOf(digito));
+	            //Conversión de caracter a entero
+	    }
+	        return suma;
+	}
 }
